@@ -45,9 +45,8 @@ server <- function(input, output) {
   output$out <- renderText({
     if (v$count == 0) count_seq <- NULL
     else count_seq <- seq.int(v$count)
-    print(v$outcome)
     paste("The outcome of trial", count_seq, "is", v$outcome, collapse = "\n")
-  }, sep = " ")
+  })
 }
 
 # Run the application 
