@@ -33,7 +33,7 @@ server <- function(input, output) {
   observeEvent(input$flip, {
     v$outcome <- c(
       v$outcome,
-      sample(c("head", "tail"), size = 1, prob = c(0.7, 0.3))
+      sample(c("head", "tail"), size = 1, prob = c(0.65, 0.35))
     )
     v$count <- v$count + 1
   })
